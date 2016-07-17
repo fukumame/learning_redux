@@ -1,4 +1,6 @@
 import { connect } from 'react-redux'
+// ディレクトリの下に、index.jsを置くと、そのファイルを最初に読む
+// http://nodejs.jp/nodejs.org_ja/api/modules.html#modules_folders_as_modules
 import { toggleTodo } from '../actions'
 import TodoList from '../components/TodoList'
 
