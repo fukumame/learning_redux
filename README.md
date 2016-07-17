@@ -1,5 +1,5 @@
 # redux、react-redux、及びES6の自主学習
-以下のチュートリアルを見て実装
+ToDoアプリ。以下のチュートリアルを見て実装
 - http://redux.js.org/index.html
 
 Reduxのコンポーネントの働きと役割メモ
