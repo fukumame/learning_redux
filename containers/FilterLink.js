@@ -3,13 +3,16 @@ import { setVisibilityFilter } from '../actions'
 import Link from '../components/Link'
 
 // stateの内容を受けて、それをPresentesion Componentのpropに伝えるためのメソッド
-// ownPropsは Linkコンポーネントの持っているpropsのことを表す
+// Presentesion Componentの属性をHash形式で渡す
+// ownPropsは FilterLinkコンポーネントの持っているpropsのことを表す
 // Footer.jsを参照すると分かる
 const mapStateToProps = (state, ownProps) => {
   return {
-    // Linkコンポーネントの filter属性と、stateのvisibilityFilterの値が一致すれば、
+    // FilterLinkコンポーネントの filter属性と、stateのvisibilityFilterの値が一致すれば、
     // activeとみなし、Linkコンポーネントがリンクを非活性にする
-    active: ownProps.filter === state.visibilityFilter
+    // active, childrenはLinkコンポーネントの属性
+    active: ownProps.filter === state.visibilityFilter,
+    children: ownProps.children
   }
 }
 
